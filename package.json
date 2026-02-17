@@ -1,0 +1,65 @@
+{
+  "name": "@forgedevstack/forge-auth",
+  "version": "1.0.0",
+  "description": "AuthMaster - Simple authentication for React with email/password and OAuth support",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "lint": "eslint src",
+    "demo": "cd demo && npm run dev",
+    "portal": "cd portal && npm run dev",
+    "portal:build": "cd portal && npm run build"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "keywords": [
+    "react",
+    "auth",
+    "authentication",
+    "oauth",
+    "google",
+    "facebook",
+    "github",
+    "email",
+    "login",
+    "forgestack"
+  ],
+  "author": "John Yaghobieh",
+  "license": "MIT",
+  "homepage": "https://forgedevstack.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yaghobieh/auth-master"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "@forgedevstack/bear": ">=1.0.0",
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
+  },
+  "dependencies": {
+    "@forgedevstack/bear": "^1.0.7"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0"
+  }
+}
